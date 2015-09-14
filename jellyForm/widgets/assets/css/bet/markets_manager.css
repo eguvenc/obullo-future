@@ -1,0 +1,33 @@
+#markets_table,#markets_group_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+#list
+{
+	margin-left:5px !important;
+	margin-bottom:15px !important;
+}
+@media all and (max-width:859px){
+	.table-scrollable1
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:450px){
+	.table-scrollable2
+	{
+		overflow-x:auto;
+	}
+}
+.filter-form
+{
+	margin-top:10px;
+}
+.dropdown-menu
+{
+	width:auto !important;
+}

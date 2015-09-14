@@ -1,0 +1,54 @@
+#sports_table,#categories_table,#tournament_table
+{
+	width:100% !important;
+}
+.deposit_bonus-h a
+{
+	margin:15px auto !important;
+	display: block;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+#list_sports,#list_categories,#list_tournaments
+{
+	margin-left:5px !important;
+	margin-bottom:10px;
+}
+@media all and (max-width:426px){
+	.table-scrollable1
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:535px){
+	.table-scrollable2
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:722px){
+	.table-scrollable3
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:1107px){
+	.filter-form .form-group,.filter-form .form-group label,.filter-form .form-group input
+	{
+		display:block;
+		float:none;
+	}
+	#list
+	{
+		display: inline-block;
+		float: left;
+		margin-top:-53px;
+		margin:10px 0 !important;
+	}
+}
+.filter-form
+{
+	margin-top:10px;
+}

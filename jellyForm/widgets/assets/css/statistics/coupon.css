@@ -1,0 +1,68 @@
+#coupon_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.coupon_filter:after,.coupon_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.coupon_filter,.coupon_filter div
+{
+	padding-left:0;
+	margin-left:0;
+}
+.editModal label
+{
+	line-height: 30px;
+}
+label
+{
+	line-height:30px;
+}
+.coupon_filter label
+{
+	width:auto !important;
+	padding-left:2px;
+}
+table,th
+{
+	text-align:center;
+}
+
+.coupon-details-row {
+	margin:2px auto;
+}
+.coupon-details-row label {
+	margin-left: 10px;
+}
+#coupon_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+.filter-form .form-group
+{
+	margin-left:0!important;
+}
+#list
+{
+	margin:10px 0;
+}
+@media all and (max-width:840px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:907px){
+	.filter-form .form-group,.filter-form .form-group label
+	{
+		display: block;
+	}
+}

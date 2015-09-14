@@ -1,0 +1,35 @@
+#limit_keys_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.limit_keys_filter:after,.limit_keys_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.limit_keys_filter,.limit_keys_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+.editModal label
+{
+	line-height: 30px;
+}
+#limit_keys
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:600px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}

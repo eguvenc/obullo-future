@@ -1,0 +1,30 @@
+#list
+{
+	margin:5px;
+}
+#paymentMethodsGridTable,#paymentMethodsConfigTable
+{
+	width:100% !important;
+}
+.table-scrollable,.table-scrollable2
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:835px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:1045px){
+	.table-scrollable2
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:904px){
+	.filter-form .form-group,.filter-form .form-group label
+	{
+		display: block;
+	}
+}

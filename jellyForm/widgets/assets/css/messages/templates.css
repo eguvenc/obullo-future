@@ -1,0 +1,18 @@
+#messages_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:490px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+.filter-form label,.filter-form input
+{
+	margin-left:-5px;
+}

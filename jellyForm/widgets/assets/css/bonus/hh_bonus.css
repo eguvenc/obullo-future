@@ -1,0 +1,47 @@
+.modal label
+{
+	line-height:32px;
+}
+table.inline-table
+{
+	width:100%;
+	min-height:150px;
+	text-align:center;
+}
+table.inline-table th
+{
+	text-align:center;
+}
+#DataTables_Table_0_wrapper,#DataTables_Table_1_wrapper
+{
+	width:46%;
+	float: left;
+	margin:0 25px;
+}
+.updateModal label,.addModal label
+{
+	line-height:32px;
+}
+.datepicker
+{
+	z-index:99999 !important;
+}
+table tbody td
+{
+	vertical-align: middle !important;
+}
+
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:750px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+#deposit_bonus_table,#hh_airtime_table
+{
+	width:100% !important;
+}

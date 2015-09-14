@@ -1,0 +1,157 @@
+#departments_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.departments_filter:after,.departments_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.departments_filter,.departments_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+label
+{
+	line-height: 30px;
+}
+.departments_filter div.col-sm-1
+{
+	/*margin-left:-70px;*/
+	margin-right:10px;
+}
+.departments_filter label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.text-right a
+{
+	margin:0 5px;
+}
+.editContainer label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.editContainer select
+{
+	width: 137px !important;
+}
+.editContainer textarea
+{
+	width:100%;
+	text-align:left;
+	margin-left:25px
+}
+.editContainer div.editField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	float:right;
+	margin:0 25px 25px;
+}
+.editContainer button.updateButton
+{
+	position:absolute;
+	margin:0 auto;
+	bottom:-10px;
+	left:45%;
+}
+.sectionField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	margin:0 25px 25px;
+	display: block;
+	height:auto;
+	width:90%;
+}
+.editContainer .cke
+{
+	margin-left:20px;
+	width:101%;
+}
+td.options
+{
+	width:23%;
+	padding-left:25px;
+}
+td.options a
+{
+	display: block;
+	float: left;
+	margin:0 20px;
+	text-align:center;
+}
+td.options a:last-child
+{
+	margin-right:0;
+	clear:right;
+}
+.confirmModal
+{
+	padding-bottom:0;
+}
+.addDepartmentModal .modal-body
+{
+	padding-bottom:0px !important;
+}
+.addModal .checkboxLabel
+{
+	line-height:30px;
+	float: left;
+	padding-right:25px;
+}
+.addModal input[type=checkbox]
+{
+	float: left;
+	margin: 0 9px;
+	margin-top: 9px;
+	margin-left:0;
+}
+.filter-form .form-group:first-child label
+{
+	margin-left:-5px;
+}
+#departments_table
+{
+	width:100% !important;
+}
+/*.pagination.dataTables_paginate
+{
+	position: fixed;
+	right: 50px;
+}*/
+#list
+{
+	margin-top:-3px;
+}
+.page-header .col-sm-1
+{
+	width:auto !important;
+	margin-right:0;
+	padding-right:0;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:640px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:767px){
+	.filter-form .form-group,.filter-form .form-group input
+	{
+		display: inline-block;
+	}
+}

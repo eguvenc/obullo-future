@@ -1,0 +1,79 @@
+#coupon_table tbody td
+{
+	/*padding-left: 20px;*/
+	vertical-align: middle;
+}
+.coupon_filter:after,.coupon_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.coupon_filter,.coupon_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+.editModal label
+{
+	line-height: 30px;
+}
+label
+{
+	line-height:30px;
+}
+.coupon_filter label
+{
+	width:auto !important;
+	padding-left:2px;
+}
+table,th
+{
+	text-align:center;
+}
+
+.filter-form .form-group:first-child label
+{
+	margin-left:-5px;
+}
+#list
+{
+	margin-top:-3px;
+}
+@media all and (max-width:774px){
+	.filter-form .form-group,.filter-form .form-group label,.filter-form .form-group input
+	{
+		display: block;
+	}
+	#list
+	{
+		margin:15px 25px 25px 5px;
+	}
+}
+
+#coupon_table
+{
+	width:100% !important;
+}
+/*.pagination.dataTables_paginate
+{
+	position: fixed;
+	right: 50px;
+}*/
+.page-header .col-sm-1
+{
+	width:auto !important;
+	margin-right:0;
+	padding-right:0;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:1288px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}

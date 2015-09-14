@@ -1,0 +1,224 @@
+<?php
+
+/**
+ * Navbar
+ * 
+ * @category  Navbar
+ * @package   Create
+ * @author    Ali İhsan ÇAĞLAYAN <ihsancaglayan@gmail.com>
+ * @copyright 2009-2014 Obullo
+ * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL Licence
+ * @link      http://obullo.com/docs
+ */
+Class Permission_Parser
+{
+    /**
+     * Config parameters
+     * for str_replace
+     */
+    const STR_REPLACE_URL   = '##url##';
+    const STR_REPLACE_ICON  = '##icon##';
+    const STR_REPLACE_NAME  = '##name##';
+
+    /**
+     * Constructor
+     * 
+     * @param object $provider provider instance
+     */
+    public function __construct($provider)
+    {
+
+        if ( ! is_object($provider)) {
+            throw new RunTimeException("Must be required object");
+        }
+        $this->c = $provider->c;
+        $this->provider = $provider;
+    }
+
+    /**
+     * Sub-categories to html
+     * 
+     * @param array   $subCategories sub-categories
+     * @param boolean $firstItem     first item
+     * 
+     * @return void
+     */
+    protected function subCategoryToHtml(array $subCategories, $firstItem = true)
+    {
+        foreach ($subCategories as $v) {
+
+            $iconClassName = (isset($this->provider->config['icons'][$v['rbac_permission_resource']])) ? $this->provider->config['icons'][$v['rbac_permission_resource']] : '';
+
+            if ($firstItem === true) {
+
+                $parent = (isset($v['subs'])) ? 'subOfParent' : 'singleParent';
+
+                $this->html.= str_replace(
+                    array(
+                        static::STR_REPLACE_URL,
+                        static::STR_REPLACE_ICON,
+                        static::STR_REPLACE_NAME
+                    ),
+                    array(
+                        $v['rbac_permission_resource'],
+                        $iconClassName,
+                        $this->translate($v[$this->provider->getTranslateKey()])
+                    ),
+                    $this->provider->config['template']['first'][$parent]
+                );
+            } else {
+
+                $parent = (isset($v['subs'])) ? 'childOfParent' : 'singleChild';
+
+                $this->html.= str_replace(
+                    array(
+                        static::STR_REPLACE_URL,
+                        static::STR_REPLACE_ICON,
+                        static::STR_REPLACE_NAME
+                    ),
+                    array(
+                        $v['rbac_permission_resource'],
+                        $iconClassName,
+                        $this->translate($v[$this->provider->getTranslateKey()])
+                    ),
+                    $this->provider->config['template']['second'][$parent]
+                );
+
+                // if (isset($v['subs'])) {
+                //     $this->html.= $v['rbac_permission_resource'];
+                //     $this->html.= str_replace(
+                //         array(
+                //             static::STR_REPLACE_URL,
+                //             static::STR_REPLACE_ICON,
+                //             static::STR_REPLACE_NAME
+                //         ),
+                //         array(
+                //             $v['rbac_permission_resource'],
+                //             $iconClassName,
+                //             $this->translate($v[$this->provider->getTranslateKey()])
+                //         ),
+                //         $this->provider->config['template']['sub']['second']
+                //     );
+                //     $this->html.= $this->subCategoryToHtml($v['subs'], false);
+                //     // $this->html.= $this->provider->config['template']['close']['li'];
+                // } else {
+                //     $this->html.= str_replace(
+                //         array(
+                //             static::STR_REPLACE_URL,
+                //             static::STR_REPLACE_ICON,
+                //             static::STR_REPLACE_NAME
+                //         ),
+                //         array(
+                //             $v['rbac_permission_resource'],
+                //             $iconClassName,
+                //             $this->translate($v[$this->provider->getTranslateKey()])
+                //         ),
+                //         $this->provider->config['template']['sub']['under']
+                //     );
+                //     // $this->html .= '<li><a href="/'. $v['rbac_permission_resource'] .'"><i class="'. $iconClassName .'"> </i> '. $this->translate($v['rbac_permission_resource']) .'</a></li>';
+                // }
+            }
+            if (isset($v['subs'])) {
+                $this->html.= $this->subCategoryToHtml($v['subs'], false);
+            }
+            // $firstItem = false;
+
+            // if (isset($v['subs'])) {
+            //     $firstItem = true;
+            // }
+        }
+        // $this->html .= $this->provider->config['template']['close']['ul'];
+    }
+
+    /**
+     * Build array of categories
+     * 
+     * @param array $raw raw data
+     * 
+     * @return array
+     */
+    protected function buildArrayOfCategories(array $raw)
+    {
+        $tree = array();
+        foreach ($raw as &$item) {
+            $tree[$item['rbac_permission_parent_id']][] = &$item;
+        }
+        unset($item);
+
+        foreach ($raw as &$item) {
+            if (isset($tree[$item['rbac_permission_id']])) {
+                $item['subs'] = $tree[$item['rbac_permission_id']];
+            }
+        }
+        unset($item);
+// echo '<pre>';
+// print_r($tree[0]);
+// die;
+        return $tree[0];
+    }
+
+    /**
+     * Build menu
+     * 
+     * @return void
+     */
+    public function build()
+    {
+        $categories = $this->buildArrayOfCategories($this->provider->getRawPages());
+
+        $this->html = '';
+        foreach ($categories as $v) {
+
+            if ($v['rbac_permission_parent_id'] == 0) {
+
+                $iconClassName = (isset($this->provider->config['icons'][$v['rbac_permission_resource']])) ? $this->provider->config['icons'][$v['rbac_permission_resource']] : '';
+                
+                // $this->html .= '<li class="dropdown">
+                //                 <a href="/'. $v['rbac_permission_resource'] .'" class="dropdown-toggle" data-toggle="dropdown"><i class="'. $iconClassName .'"> </i> '. $this->translate($v['rbac_permission_resource']) .'<b class="caret"></b></a>';
+                
+                $this->html .= str_replace(
+                    array(
+                        static::STR_REPLACE_URL,
+                        static::STR_REPLACE_ICON,
+                        static::STR_REPLACE_NAME
+                    ),
+                    array(
+                        $v['rbac_permission_resource'],
+                        $iconClassName,
+                        $this->translate($v[$this->provider->getTranslateKey()])
+                    ),
+                    $this->provider->config['template']['main']['open']
+                );
+            }
+            if (isset($v['subs']) AND count($v['subs']) > 0) {
+                $this->html .= $this->subCategoryToHtml($v['subs']);
+            }
+            // $this->html .= '</li>'; // class="dropdown"
+            $this->html .= $this->provider->config['template']['main']['close'];
+        }
+        // $this->html .= '';
+        return $this->html;
+    }
+
+    /**
+     * Translate
+     * 
+     * @param string $key translate key
+     * 
+     * @return string translated
+     */
+    public function translate($key)
+    {
+        if ($this->provider->isTranslator()) {
+            $translator = $this->c->load('translator');
+            return (isset($this->provider->config['translate'][$key])) ? $translator[$this->provider->config['translate'][$key]] : $key;
+        }
+        return $key;
+    }
+}
+
+
+// END Create Class
+
+/* End of file Create.php */
+/* Location: .classes/Navbar/Create.php */

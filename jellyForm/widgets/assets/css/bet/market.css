@@ -1,0 +1,83 @@
+.miniElem
+{
+	width:40px;
+	height:22px;
+	padding:0;
+	display: inline-block;
+	text-align:center;
+}
+.inlineBtn
+{
+	display: inline-block;
+	margin-left:5px;
+}
+td
+{
+	vertical-align: middle !important;
+	padding:5px !important;
+	text-align:center !important;
+}
+th
+{
+	text-align:center !important;
+}
+.sectionTitle
+{
+	float: left;
+}
+@media all and (max-width:1378px){
+	#template > .col-sm-6
+	{
+		width:100% !important;
+	}
+}
+@media all and (max-width:767px){
+	.hBtn
+	{
+		margin-top:-5px;
+	}
+}
+@media all and (max-width:736px){
+	.inlineBtn
+	{
+		display: block;
+		float: none;
+		clear: left;
+		margin:0 auto;
+		margin-top:5px;
+	}
+}
+@media all and (max-width:672px){
+	input[type=submit]{
+		margin-bottom:15px;
+	}
+}
+@media all and (max-width:669px){
+	.inlineWrap{
+		display: block !important;
+		float: none !important;
+		clear:left !important;
+		margin:10px !important;
+		text-align:left;
+	}
+	.inlineWrap button
+	{
+		margin:5px; 
+		margin-left:15px;
+	}
+
+}
+@media all and (max-width:576px){
+	.removeBtn
+	{
+		margin:5px;
+		margin-bottom:25px;
+	}
+}
+form{
+	overflow-x:auto !important;
+}
+table
+{
+	width:100% !important;
+}

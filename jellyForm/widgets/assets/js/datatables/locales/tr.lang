@@ -1,0 +1,21 @@
+
+
+{
+	"sProcessing":   "İşleniyor...",
+	"lengthMenu":   " _MENU_ &nbsp; kayıt incele",
+	"zeroRecords":  "Arama Kriterlerine Uygun Kayıt Bulunamadı !",
+	"info":         "  _TOTAL_ Kayıttan _START_ - _END_ Arası Kayıtlar",
+	"infoEmpty":    "Gösterilebilecek Kayıt Bulunamadı",
+	"sEmptyTable":     "Arama Kriterlerine Uygun Kayıt Bulunamadı !",
+	"infoFiltered": "( toplam _MAX_ kayıt arasından filtrelendi)",
+	"sInfoPostFix":  "",
+	"sSearch":       "Arama Yap: ",
+	"oPaginate": {
+		"sFirst":    "Başa Dön",
+		"sPrevious": "Önceki",
+		"sNext":     "Sonraki",
+		"sLast":     "En Son"
+	}
+
+}
+

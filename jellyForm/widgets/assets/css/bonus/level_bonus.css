@@ -1,0 +1,18 @@
+table,table th
+{
+	text-align:center;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:615px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+#level_bonus_table
+{
+	width:100% !important;
+}

@@ -1,0 +1,102 @@
+body,html
+{
+	height:100%;
+}
+.container
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: rgba(43, 13, 13, 1.68);
+	position: relative;
+	-webkit-transition:background 2s;
+	-moz-transition:background 2s;
+	-o-transition:background 2s;
+	transition:background 2s
+}
+.row
+{
+	width: 25%;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 25%;
+	padding:25px 0;
+	padding-bottom:50px;
+	border-radius:15px;
+	background: white;
+}
+form.login-form
+{
+	display: block;
+	margin:0 auto;
+	padding:25px;
+}
+form.login-form  label
+{
+	line-height:30px;
+}
+form.login-form > div.col-sm-12.form-message
+{
+	padding-left:30px;
+}
+
+
+
+@media all and (min-width:270px) and (max-width:359px){
+	.formContainer
+	{
+		width:250px;
+	}
+}
+@media all and (min-width:360px) and (max-width:599px){
+	.formContainer
+	{
+		width:300px;
+	}
+}
+@media all and (min-width:600px) and (max-width:767px){
+	.formContainer
+	{
+		width:400px;
+	}
+}
+@media all and (min-width:768px) and (max-width:979px){
+	.formContainer
+	{
+		width:450px;
+	}
+}
+@media all and (min-width:980px) and (max-width:1489px){
+	.formContainer
+	{
+		width:500px;
+	}
+}
+@media all and (min-width:1490px) and (max-width:1599px){
+	.formContainer
+	{
+		width:550px;
+	}
+}
+@media all and (min-width:1600px) and (max-width:1919px){
+	.formContainer
+	{
+		width:600px;
+	}
+}
+@media all and (min-width:1920px){
+	.formContainer
+	{
+		width:650px;
+	}
+}
+
+@media all and (max-height:550px){
+	.row
+	{
+		top:10%;
+	}
+}

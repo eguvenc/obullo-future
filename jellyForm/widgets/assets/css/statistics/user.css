@@ -1,0 +1,22 @@
+#user_table,#user_for_sites_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+.filter-form .form-group
+{
+	margin-left:0!important;
+}
+#list
+{
+	margin:10px 0;
+}
+@media all and (max-width:625px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}

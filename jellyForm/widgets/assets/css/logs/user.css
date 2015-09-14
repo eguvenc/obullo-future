@@ -1,0 +1,22 @@
+#user
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:1336px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+.filter-form .filter-wrapper:nth-child(8),#list
+{
+	/*margin-top:10px !important;*/
+}
+pre
+{
+	height:111px !important;
+}

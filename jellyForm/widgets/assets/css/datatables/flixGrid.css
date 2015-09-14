@@ -1,0 +1,41 @@
+.FlixGrid-col {
+	list-style: none;
+	height: 320px;
+	margin: 5px;
+	border-radius: 4px;
+	padding: 5px;
+}
+.FlixGrid-c-width {
+	width : 15.7%;
+	float : left;
+}
+.FlixGrid-c-0 {
+	background-color: #E8F4F9;
+	border:1px solid #C1E4F4;			
+}
+.FlixGrid-c-1 {
+	background-color: #EAEAEA;
+	border:1px solid #E8F4F9;			
+}
+.FlixGrid-row {
+	display: block;
+	padding: 3px;
+	margin: 3px;
+	overflow-x: hidden;
+}
+.FlixGrid-row-label {
+	color: #959595;
+	display: inline-block;
+	width: 25%;
+}
+.FlixGrid-row-content {
+	display: inline-flex;
+	width: 70%;
+	padding-left:3%;
+}
+.FlixGrid-pagination-row {
+	clear: both;
+}
+.FlixGrid-pagination-buttons {
+	
+}

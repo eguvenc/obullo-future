@@ -1,0 +1,133 @@
+#messages_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.messages_filter:after,.messages_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.messages_filter,.messages_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+label
+{
+	line-height: 30px;
+}
+.messages_filter label
+{
+	width:auto !important;
+}
+.text-right a
+{
+	margin:0 5px;
+}
+.editContainer label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.editContainer select
+{
+	width: 137px !important;
+}
+.editContainer textarea
+{
+	width:100%;
+	text-align:left;
+	margin-left:25px
+}
+.editContainer div.editField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	float:right;
+	margin:0 25px 25px;
+}
+.editContainer button.updateButton
+{
+	position:absolute;
+	margin:0 auto;
+	bottom:-10px;
+	left:45%;
+}
+.sectionField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	margin:0 25px 25px;
+	display: block;
+	height:auto;
+	width:90%;
+}
+.editContainer .cke
+{
+	margin-left:20px;
+	width:101%;
+}
+.viewmessage div
+{
+	padding-left:2px;
+	margin-top:5px;
+}
+.viewHead
+{
+	padding-bottom:25px;
+	margin-left:10px;
+}
+textarea.messageAnswer
+{
+	width:79%;
+	margin-left:15px;
+	height:100px;
+}
+.isRead input[type=checkbox]
+{
+	margin:0;
+	margin-left:2px;
+	margin-top:8px;
+}
+.isRead label
+{
+	padding-left:2px;
+}
+.templateModal div
+{
+	padding:0;
+	margin:0;
+}
+#messages_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:585px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:796px){
+	.filter-form .form-group,.filter-form .form-group label,.filter-form .form-group input
+	{
+		display:block;
+		float:none;
+	}
+	#list
+	{
+		display: inline-block;
+		float: left;
+		margin-top:-53px;
+		margin:10px 0 !important;
+	}
+}

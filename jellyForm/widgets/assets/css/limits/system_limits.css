@@ -1,0 +1,48 @@
+#system_limits_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.system_limits_filter:after,.system_limits_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.system_limits_filter,.system_limits_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+.editModal label
+{
+	line-height: 30px;
+}
+.break-words {
+	/*word-break:  break-word;*/
+  width: 500px;  
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP printers */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-break: break-all; /* IE */
+  word-wrap: break-word; /* IE */
+  -moz-binding: url('xbl.xml#wordwrap'); /* Firefox (using XBL) */
+}
+#system_limits
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:1105px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}

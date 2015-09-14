@@ -1,0 +1,120 @@
+#withdraw_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.withdraw_filter:after,.withdraw_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.withdraw_filter,.withdraw_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+label
+{
+	line-height: 30px;
+}
+.withdraw_filter div.col-sm-1
+{
+	margin-left:-70px;
+	margin-right:10px;
+}
+.withdraw_filter label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.text-right a
+{
+	margin:0 5px;
+}
+.editContainer L
+{
+	padding-left:0;
+	margin-left:0;
+}
+.editContainer select
+{
+	width: 137px !important;
+}
+.editContainer textarea
+{
+	width:100%;
+	text-align:left;
+	margin-left:25px
+}
+.editContainer div.editField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	float:right;
+	margin:0 25px 25px;
+}
+.editContainer button.updateButton
+{
+	position:absolute;
+	margin:0 auto;
+	bottom:-10px;
+	left:45%;
+}
+.sectionField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	margin:0 25px 25px;
+	display: block;
+	height:auto;
+	width:90%;
+}
+.editContainer .cke
+{
+	margin-left:20px;
+	width:101%;
+}
+.withdraw_filter .col-sm-2,.withdraw_filter .col-sm-3
+{
+	width:auto !important;
+}
+.secondField
+{
+	float: right;
+}
+.updateLeft input[type=file]
+{
+	margin-top:5px;
+}
+.updateButton
+{
+	margin-right:140px;
+}
+label.longLabel
+{
+	width: 230px !important;
+}
+label.m-longLabel
+{
+	width: 190px !important;
+}
+
+table,th
+{
+	text-align:center;
+}
+.calculateWrapper h6
+{
+	font-size: 12px;
+	padding: 5px 10px;
+	border: 1px dotted #ddd;
+	margin: 4px;
+}
+.calculateWrapper span
+{
+	font-weight:bold;
+}

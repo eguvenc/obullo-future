@@ -1,0 +1,38 @@
+table.inline-table
+{
+	width:100%;
+	min-height:150px;
+	text-align:center;
+}
+table.inline-table th
+{
+	text-align:center;
+}
+#DataTables_Table_0_wrapper,#DataTables_Table_1_wrapper
+{
+	width:47%;
+	float: left;
+	margin:0 25px;
+}
+.updateModal label,.addModal label
+{
+	line-height:32px;
+}
+td
+{
+	vertical-align:middle !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:720px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+#combination_table
+{
+	width:100% !important;
+}

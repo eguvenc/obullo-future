@@ -1,0 +1,18 @@
+#transactions_table,#transaction_categories_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:768px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+.deposit_bonus-h a
+{
+	margin:0 5px;
+}

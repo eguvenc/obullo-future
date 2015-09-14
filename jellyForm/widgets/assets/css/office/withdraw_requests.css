@@ -1,0 +1,129 @@
+#withdraw_requests_table tbody td
+{
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.withdraw_requests_filter:after,.withdraw_requests_filter:before
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.withdraw_requests_filter,.withdraw_requests_filter div
+{
+	height:50px;
+	padding-left:0;
+	margin-left:0;
+}
+label
+{
+	line-height: 30px;
+}
+.withdraw_requests_filter div.col-sm-1
+{
+	margin-left:-70px;
+	margin-right:10px;
+}
+.withdraw_requests_filter label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.text-right a
+{
+	margin:0 5px;
+}
+.editContainer label
+{
+	padding-left:0;
+	margin-left:0;
+}
+.editContainer select
+{
+	width: 137px !important;
+}
+.editContainer textarea
+{
+	width:100%;
+	text-align:left;
+	margin-left:25px
+}
+.editContainer div.editField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	float:right;
+	margin:0 25px 25px;
+}
+.editContainer button.updateButton
+{
+	position:absolute;
+	margin:0 auto;
+	bottom:-10px;
+	left:45%;
+}
+.sectionField
+{
+	border:1px dotted #ccc;
+	padding:25px 25px 0 25px;
+	border-radius:5px;
+	margin:0 25px 25px;
+	display: block;
+	height:auto;
+	width:90%;
+}
+.editContainer .cke
+{
+	margin-left:20px;
+	width:101%;
+}
+.withdraw_requests_filter .col-sm-2,.withdraw_requests_filter .col-sm-3
+{
+	width:auto !important;
+}
+.secondField
+{
+	float: right;
+}
+.updateLeft input[type=file]
+{
+	margin-top:5px;
+}
+.updateButton
+{
+	margin-right:140px;
+}
+label.longLabel
+{
+	width: 230px !important;
+}
+table,th
+{
+	text-align:center;
+}
+
+#list
+{
+	margin:25px 5px;
+}
+#requests_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+@media all and (max-width:950px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
+@media all and (max-width:1017px){
+	.filter-form .form-group,.filter-form .form-group label
+	{
+		display: block;
+	}
+}

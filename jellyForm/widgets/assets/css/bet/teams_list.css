@@ -1,0 +1,19 @@
+#teams_table
+{
+	width:100% !important;
+}
+.table-scrollable
+{
+	overflow-x:hidden;
+}
+/*#list
+{
+	margin-left:5px !important;
+	margin-bottom:15px !important;
+}*/
+@media all and (max-width:551px){
+	.table-scrollable
+	{
+		overflow-x:auto;
+	}
+}
